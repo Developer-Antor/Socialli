@@ -1,0 +1,13 @@
+.app-header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.5rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 32px;
+}

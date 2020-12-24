@@ -1,0 +1,95 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.post-container {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post {
+    width: 35rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.post-header {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.post-header .post-avatar {
+    margin-right: 0.5rem;
+}
+
+.post-image {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.post-caption {
+    padding: 0.5rem;
+}
+
+.post-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.post-comment input {
+    font-size: 1.2rem;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+
+.post-comment button {
+    font-size: 1.1rem;
+    width: 3rem;
+    height: 2rem;
+    padding: 0.2rem;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.comment-container {
+    width: 100%;
+    border-top: 1px solid #f4f4f4;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.comments {
+    margin-left: 0.7rem;
+}
+
+.comments li {
+    list-style: none;
+}
+
+@media (max-width: 35rem) {
+    .post {
+        width: 98%;
+    }
+}
+
+#postloader {
+    position: fixed;
+    top: 0;
+    background: #fff url("../Assets/loader.gif") no-repeat center;
+    z-index: 101;
+    height: 100vh;
+    width: 100%;
+}
